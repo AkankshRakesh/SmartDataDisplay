@@ -399,7 +399,6 @@ export default function SmartDataDisplay() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-100 p-4">
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
         <div className="text-center mb-8">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Code className="h-8 w-8 text-blue-600" />
@@ -411,7 +410,6 @@ export default function SmartDataDisplay() {
           </p>
         </div>
 
-        {/* Stats */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
           <Card>
             <CardContent className="flex items-center gap-3 p-4">
@@ -442,7 +440,6 @@ export default function SmartDataDisplay() {
           </Card>
         </div>
 
-        {/* Filters */}
         <Card className="mb-8">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
@@ -451,7 +448,6 @@ export default function SmartDataDisplay() {
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-6">
-            {/* Search */}
             <div className="relative">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
               <Input
@@ -463,7 +459,6 @@ export default function SmartDataDisplay() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-              {/* Category Filter */}
               <div>
                 <label className="text-sm font-medium mb-2 block">Category</label>
                 <Select value={selectedCategory} onValueChange={setSelectedCategory}>
@@ -480,7 +475,6 @@ export default function SmartDataDisplay() {
                 </Select>
               </div>
 
-              {/* Pricing Filter */}
               <div>
                 <label className="text-sm font-medium mb-2 block">Pricing</label>
                 <Select value={selectedPricing} onValueChange={setSelectedPricing}>
@@ -497,7 +491,6 @@ export default function SmartDataDisplay() {
                 </Select>
               </div>
 
-              {/* Results Count */}
               <div className="flex items-end">
                 <div className="text-sm text-gray-600">
                   <span className="font-semibold">{filteredTools.length}</span> of{" "}
@@ -505,7 +498,6 @@ export default function SmartDataDisplay() {
                 </div>
               </div>
 
-              {/* Refresh Button */}
               <div className="flex items-end">
                 <Button onClick={handleRefresh} disabled={isRefreshing} className="w-full">
                   <RefreshCw className={`h-4 w-4 mr-2 ${isRefreshing ? "animate-spin" : ""}`} />
@@ -516,7 +508,6 @@ export default function SmartDataDisplay() {
           </CardContent>
         </Card>
 
-        {/* Tools Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredTools.map((tool) => (
             <Card key={tool.id} className="h-full flex flex-col hover:shadow-lg transition-shadow">
@@ -596,8 +587,6 @@ export default function SmartDataDisplay() {
             </Card>
           ))}
         </div>
-
-        {/* No Results */}
         {filteredTools.length === 0 && (
           <div className="text-center py-12">
             <Code className="h-16 w-16 text-gray-300 mx-auto mb-4" />
@@ -606,11 +595,6 @@ export default function SmartDataDisplay() {
           </div>
         )}
 
-        {/* Footer */}
-        <footer className="mt-16 text-center text-gray-500 text-sm">
-          <p>© 2024 Developer Tools Hub - Maketronics Tech Challenge</p>
-          <p className="mt-1">Built with Next.js, TypeScript, and Tailwind CSS</p>
-        </footer>
       </div>
     </div>
   )
