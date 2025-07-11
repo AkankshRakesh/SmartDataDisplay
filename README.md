@@ -2,7 +2,7 @@
 
 A comprehensive web application showcasing the most popular and essential tools that every developer should know. Built with advanced search, filtering, and modern UI.
 
-## 🚀 Features
+## 📃 Features
 
 - **Comprehensive Tool Database**: 20+ carefully curated developer tools across various categories
 - **Advanced Search**: Search by tool name, description, company, or key features
