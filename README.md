@@ -1,6 +1,6 @@
 # Smart Data Display - Popular Developer Tools
 
-A comprehensive web application showcasing the most popular and essential tools that every developer should know. Built for the Maketronics Tech Challenge with advanced search, filtering, and modern UI.
+A comprehensive web application showcasing the most popular and essential tools that every developer should know. Built with advanced search, filtering, and modern UI.
 
 ## 🚀 Features
 
