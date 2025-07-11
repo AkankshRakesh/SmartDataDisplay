@@ -48,8 +48,8 @@ Each developer tool contains:
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd smart-data-display
+   git https://github.com/AkankshRakesh/SmartDataDisplay
+   cd SmartDataDisplay
    ```
 
 2. **Install dependencies**
