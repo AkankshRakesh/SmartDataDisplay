@@ -192,12 +192,3 @@ The app uses Tailwind CSS. Modify classes in the components or update the `tailw
 - **Platform Coverage**: Web, Desktop, Mobile, CLI, Cloud
 - **Establishment Range**: 2002-2020 (18-year span)
 
-## 📞 Support
-
-For questions or issues, please create an issue in the GitHub repository or contact the development team.
-
----
-
-**Built with ❤️ for the Maketronics Tech Challenge**
-
-*Empowering developers to discover the best tools for their workflow*
