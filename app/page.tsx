@@ -596,6 +596,9 @@ export default function SmartDataDisplay() {
         )}
 
       </div>
+      <footer className="mt-16 text-center text-gray-500 text-sm">
+          <p className="mt-1">Built with Next.js, TypeScript, and Tailwind CSS</p>
+      </footer>
     </div>
   )
 }
