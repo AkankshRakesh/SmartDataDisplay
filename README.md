@@ -47,30 +47,30 @@ Each developer tool contains:
 ### Local Development
 
 1. **Clone the repository**
-   \`\`\`bash
+   ```bash
    git clone <repository-url>
    cd smart-data-display
-   \`\`\`
+   ```
 
 2. **Install dependencies**
-   \`\`\`bash
+   ```bash
    npm install
-   \`\`\`
+   ```
 
 3. **Run the development server**
-   \`\`\`bash
+   ```bash
    npm run dev
-   \`\`\`
+   ```
 
 4. **Open your browser**
-   Navigate to \`http://localhost:3000\`
+   Navigate to `http://localhost:3000`
 
 ### Production Build
 
-\`\`\`bash
+```bash
 npm run build
 npm start
-\`\`\`
+```
 
 ## 🎯 Key Features Implemented
 
@@ -123,9 +123,9 @@ npm start
 ## 🔧 Customization
 
 ### Adding New Tools
-Edit the \`developerToolsData\` array in \`app/page.tsx\`:
+Edit the `developerToolsData` array in `app/page.tsx`:
 
-\`\`\`typescript
+```typescript
 const newTool: DeveloperTool = {
   id: 21,
   name: "Your Tool Name",
@@ -141,13 +141,13 @@ const newTool: DeveloperTool = {
   users: "1M+",
   established: 2024
 }
-\`\`\`
+```
 
 ### Adding New Categories
 Categories are automatically generated from the tool data. Simply add tools with new categories.
 
 ### Styling Customization
-The app uses Tailwind CSS. Modify classes in the components or update the \`tailwind.config.ts\` file.
+The app uses Tailwind CSS. Modify classes in the components or update the `tailwind.config.ts` file.
 
 ## 🚀 Deployment Options
 
@@ -158,7 +158,7 @@ The app uses Tailwind CSS. Modify classes in the components or update the \`tail
 
 ### Other Platforms
 - **Netlify**: Connect GitHub repository
-- **GitHub Pages**: Use \`npm run build\` and deploy \`out\` folder
+- **GitHub Pages**: Use `npm run build` and deploy `out` folder
 - **Railway**: Connect repository and deploy
 
 ## 🎯 Challenge Requirements Met
